@@ -1,13 +1,347 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MP1</title>
-    </head>
-    <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
-    </body>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Pradyumna Wagholikar | Portfolio</title>
+</head>
+
+<body>
+
+  <!-- Sticky navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">PW</a>
+
+      <div class="nav-links">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#video" class="nav-link">Video</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Hero / Header -->
+  <header id="home" class="section hero">
+    <div class="section-content hero-content">
+      <p class="eyebrow">MCS @ UIUC</p>
+
+      <h1>Pradyumna Wagholikar</h1>
+
+      <p class="hero-description">
+        Computer Science graduate student interested in artificial
+        intelligence, computer vision, machine learning, and building
+        useful software.
+      </p>
+
+      <a href="#projects" class="primary-button">
+        Explore my work
+      </a>
+    </div>
+  </header>
+
+
+  <!-- About / Multi-column -->
+  <section id="about" class="section about">
+    <div class="section-content">
+
+      <div class="section-heading">
+        <p class="eyebrow">About</p>
+        <h2>What I like building</h2>
+
+        <p>
+          I enjoy working at the intersection of intelligent systems,
+          computer vision, and practical software engineering.
+        </p>
+      </div>
+
+      <div class="columns">
+
+        <article class="column-card">
+          <div class="feature-icon icon-ai"></div>
+
+          <h3>Artificial Intelligence</h3>
+
+          <p>
+            Building machine learning systems that turn research ideas
+            into useful real-world applications.
+          </p>
+        </article>
+
+        <article class="column-card">
+          <div class="feature-icon icon-vision"></div>
+
+          <h3>Computer Vision</h3>
+
+          <p>
+            Exploring pose estimation, landmark-based recognition,
+            multimodal learning, and human-centered vision systems.
+          </p>
+        </article>
+
+        <article class="column-card">
+          <div class="feature-icon icon-code"></div>
+
+          <h3>Software Engineering</h3>
+
+          <p>
+            Designing reliable applications with an emphasis on clean
+            interfaces, thoughtful architecture, and usability.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Carousel -->
+  <section id="projects" class="section projects">
+    <div class="section-content">
+
+      <div class="section-heading">
+        <p class="eyebrow">Selected Work</p>
+        <h2>Projects</h2>
+      </div>
+
+      <div class="carousel">
+
+        <button
+          class="carousel-arrow carousel-arrow-left"
+          id="carousel-prev"
+          aria-label="Previous project">
+          &#10094;
+        </button>
+
+        <div class="carousel-window">
+
+          <article class="carousel-slide active">
+            <div class="project-number">01</div>
+
+            <h3>Indian Sign Language Recognition</h3>
+
+            <p>
+              A real-time sign language recognition system using hand
+              landmarks and a bidirectional LSTM architecture.
+            </p>
+
+            <button
+              class="secondary-button modal-trigger"
+              data-modal-title="Indian Sign Language Recognition"
+              data-modal-text="This project uses landmark-based sequential data and a BiLSTM network to recognize Indian Sign Language gestures in real time.">
+              Learn more
+            </button>
+          </article>
+
+
+          <article class="carousel-slide">
+            <div class="project-number">02</div>
+
+            <h3>Multimodal Hate Speech Detection</h3>
+
+            <p>
+              A multimodal learning system combining text and image
+              representations using a hypergraph neural network.
+            </p>
+
+            <button
+              class="secondary-button modal-trigger"
+              data-modal-title="Multimodal Hate Speech Detection"
+              data-modal-text="This project combines textual and visual representations using a hypergraph neural network to model relationships across multiple modalities.">
+              Learn more
+            </button>
+          </article>
+
+
+          <article class="carousel-slide">
+            <div class="project-number">03</div>
+
+            <h3>PitchPolish</h3>
+
+            <p>
+              A product-focused application designed to help users
+              improve and refine how they communicate their ideas.
+            </p>
+
+            <button
+              class="secondary-button modal-trigger"
+              data-modal-title="PitchPolish"
+              data-modal-text="PitchPolish explores how AI-assisted workflows can help users structure, refine, and present ideas more effectively.">
+              Learn more
+            </button>
+          </article>
+
+        </div>
+
+        <button
+          class="carousel-arrow carousel-arrow-right"
+          id="carousel-next"
+          aria-label="Next project">
+          &#10095;
+        </button>
+
+      </div>
+
+
+      <div class="carousel-dots">
+        <button class="carousel-dot active" data-slide="0"></button>
+        <button class="carousel-dot" data-slide="1"></button>
+        <button class="carousel-dot" data-slide="2"></button>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Fixed background section -->
+  <section id="experience" class="section experience">
+    <div class="experience-overlay">
+
+      <div class="section-content experience-content">
+
+        <p class="eyebrow">Experience</p>
+
+        <h2>Learning by building</h2>
+
+        <p>
+          From research projects and hackathons to graduate study at
+          UIUC, I enjoy tackling problems where software and intelligent
+          systems can create something tangible.
+        </p>
+
+        <button
+          class="primary-button modal-trigger"
+          data-modal-title="My Experience"
+          data-modal-text="My experience includes research in computer vision and multimodal AI, technical projects, hackathons, and graduate study in Computer Science at UIUC.">
+          Read more
+        </button>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Video -->
+  <section id="video" class="section video-section">
+    <div class="section-content">
+
+      <div class="section-heading">
+        <p class="eyebrow">Demo</p>
+        <h2>See a project in action</h2>
+
+        <p>
+          A short demonstration of one of my projects.
+        </p>
+      </div>
+
+<div class="video-container">
+  <video controls>
+    <source src="assets/demo.mp4" type="video/mp4">
+    Your browser does not support the HTML5 video element.
+  </video>
+</div>
+
+    </div>
+  </section>
+
+
+  <!-- Contact -->
+  <section id="contact" class="section contact">
+    <div class="section-content contact-content">
+
+      <p class="eyebrow">Contact</p>
+
+      <h2>Let's connect</h2>
+
+      <p>
+        I'm always interested in discussing software, AI, research,
+        and interesting engineering problems.
+      </p>
+
+      <a
+        class="email-link"
+        href="mailto:phw5@illinois.edu">
+        phw5@illinois.edu
+      </a>
+
+      <div class="social-links">
+
+        <a
+          class="social-icon github-icon"
+          href="https://github.com/Phw5"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub">
+        </a>
+
+        <a
+          class="social-icon linkedin-icon"
+          href="https://www.linkedin.com/in/pradyumna-wagholikar-0211a71bb/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn">
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="section-content footer-content">
+
+      <p>
+        Pradyumna Wagholikar
+      </p>
+
+      <p>
+        CS 409 · MP1
+      </p>
+
+    </div>
+  </footer>
+
+
+  <!-- Modal -->
+  <div class="modal" id="modal" aria-hidden="true">
+
+    <div class="modal-backdrop"></div>
+
+    <div
+      class="modal-content"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-title">
+
+      <button
+        class="modal-close"
+        id="modal-close"
+        aria-label="Close modal">
+        &times;
+      </button>
+
+      <p class="eyebrow">Details</p>
+
+      <h2 id="modal-title">
+        Project title
+      </h2>
+
+      <p id="modal-text">
+        Project information.
+      </p>
+
+    </div>
+
+  </div>
+
+</body>
 </html>
